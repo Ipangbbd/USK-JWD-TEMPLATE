@@ -69,10 +69,3 @@ No server backend required — this feature is for local/demo use only.
 This project is licensed under the **MIT License** — see [LICENSE](./LICENSE) for details.
 
 ---
-
-## ✨ Author
-**Muhammad Rovi**  
-📧 your@email.com  
-💼 [LinkedIn](https://linkedin.com/in/yourprofile)  
-🌍 [Website](https://yourdomain.com)
-```
