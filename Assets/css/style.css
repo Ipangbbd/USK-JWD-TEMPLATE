@@ -1,0 +1,61 @@
+:root{--black:#111;--white:#fff;--gray:#666;--border:#e6e6e6;--accent:#000;}
+*{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:"Inter",-apple-system,BlinkMacSystemFont,sans-serif;background:var(--white);color:var(--black);line-height:1.6;-webkit-font-smoothing:antialiased;}
+a{text-decoration:none;color:inherit;}
+.container{max-width:1100px;margin:0 auto;padding:0 2rem;}
+/* ===== NAVBAR ===== */
+.floating-nav{position:fixed;top:1.5rem;left:50%;transform:translateX(-50%);z-index:1000;backdrop-filter:blur(12px);background:rgba(255,255,255,.5);border:1px solid rgba(0,0,0,.08);border-radius:40px;padding:.6rem 1.6rem;box-shadow:0 4px 20px rgba(0,0,0,.05);transition:background .3s,box-shadow .3s;}
+.floating-nav .nav-inner{display:flex;gap:2rem;align-items:center;justify-content:center;}
+.floating-nav a{font-weight:500;font-size:.95rem;color:#333;position:relative;transition:color .3s;}
+.floating-nav a::after{content:"";position:absolute;bottom:-6px;left:0;width:0;height:2px;background:var(--black);transition:width .3s;}
+.floating-nav a:hover,.floating-nav a.active{color:var(--black);}
+.floating-nav a:hover::after,.floating-nav a.active::after{width:100%;}
+body.scrolled .floating-nav{background:rgba(255,255,255,.8);box-shadow:0 6px 30px rgba(0,0,0,.08);}
+
+/* ===== HERO ===== */
+.hero{min-height:100vh;display:flex;align-items:center;border-bottom:1px solid var(--border);}
+.hero-content{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center;}
+.hero h1{font-size:3.8rem;font-weight:900;line-height:1.1;margin-bottom:1.5rem;letter-spacing:-.02em;}
+.hero .role{color:var(--gray);font-size:1.1rem;margin-bottom:1.5rem;font-weight:400;}
+.hero p{color:#333;font-size:1rem;margin-bottom:2rem;max-width:480px;}
+.btn-group{display:flex;gap:1rem;}
+.btn{padding:.9rem 1.8rem;border:1px solid var(--black);font-weight:500;border-radius:0;transition:.3s;}
+.btn:hover{background:var(--black);color:var(--white);}
+.hero-img img{width:100%;max-width:380px;filter:grayscale(100%);border:1px solid var(--border);}
+
+/* ===== PROFILE ===== */
+.profile{padding:6rem 0;border-bottom:1px solid var(--border);}
+.section-title{text-align:center;font-size:2.2rem;font-weight:800;margin-bottom:4rem;}
+.profile-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:2rem;}
+.card{border:1px solid var(--border);border-radius:10px;overflow:hidden;transition:.3s;background:#fff;}
+.card:hover{border-color:var(--black);transform:translateY(-4px);}
+.card-img{width:100%;height:500px;object-fit:cover;display:block;border-bottom:1px solid var(--border);filter:grayscale(100%);}
+.card-body{padding:1.5rem;}
+.card-icon{font-size:1.5rem;margin-bottom:.8rem;color:var(--black);}
+.card h3{font-size:1.2rem;font-weight:700;margin-bottom:.8rem;}
+.card p{color:var(--gray);font-size:.95rem;}
+
+/* ===== CONTACT ===== */
+.contact{padding:6rem 0;}
+.contact-wrap{display:grid;grid-template-columns:1fr 1fr;gap:3rem;}
+.contact-info h2{font-size:2.2rem;font-weight:800;margin-bottom:1rem;}
+.contact-info p{color:var(--gray);margin-bottom:2rem;max-width:420px;}
+.info-item{margin-bottom:1.2rem;}
+.info-item i{width:22px;}
+.contact-form{border:1px solid var(--border);padding:2rem;}
+.form-input,.form-textarea{width:100%;border:none;border-bottom:1px solid var(--border);padding:.8rem 0;margin-bottom:1.5rem;font-family:inherit;background:transparent;font-size:1rem;}
+.form-input:focus,.form-textarea:focus{outline:none;border-bottom-color:var(--black);}
+.form-btn{padding:.9rem 1.8rem;background:var(--black);color:var(--white);border:none;font-weight:600;cursor:pointer;transition:.3s;}
+.form-btn:hover{opacity:.8;}
+
+/* ===== FOOTER ===== */
+footer{padding:3rem 0;text-align:center;border-top:1px solid var(--border);font-size:.9rem;color:var(--gray);}
+footer .socials{margin-top:1.5rem;display:flex;justify-content:center;gap:1rem;}
+footer .social{width:36px;height:36px;border:1px solid var(--border);display:flex;align-items:center;justify-content:center;color:var(--black);transition:.3s;}
+footer .social:hover{background:var(--black);color:var(--white);}
+@media(max-width:768px){
+.hero-content,.contact-wrap{grid-template-columns:1fr;text-align:center;}
+.hero-img img{margin:2rem auto 0;}
+.floating-nav{width:90%;padding:.5rem 1rem;top:1rem;}
+.floating-nav .nav-inner{gap:1.2rem;}
+}

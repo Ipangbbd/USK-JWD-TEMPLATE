@@ -1,0 +1,17 @@
+/* ===== CONTACT PAGE ===== */
+.contact-hero{padding:8rem 0 3rem;text-align:center;border-bottom:1px solid var(--border);}
+.contact-header h1{font-size:3rem;font-weight:900;margin-bottom:1.5rem;line-height:1.1;}
+.contact-header p{color:var(--gray);max-width:600px;margin:0 auto;font-size:1.05rem;}
+.contact-page{padding:5rem 0 6rem;}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:flex-start;}
+.contact-details{display:flex;flex-direction:column;gap:2rem;}
+.contact-item{display:flex;align-items:flex-start;gap:1rem;}
+.contact-item i{font-size:1.3rem;color:var(--black);margin-top:.3rem;}
+.contact-item h3{font-size:1rem;font-weight:700;margin-bottom:.3rem;}
+.contact-item p{color:var(--gray);font-size:.95rem;}
+.contact-form{border:1px solid var(--border);padding:2.5rem;background:#fff;}
+.form-input,.form-textarea{width:100%;border:none;border-bottom:1px solid var(--border);padding:1rem 0;margin-bottom:1.8rem;background:transparent;font-family:inherit;font-size:1rem;}
+.form-input:focus,.form-textarea:focus{outline:none;border-bottom-color:var(--black);}
+.form-btn{padding:.9rem 2rem;background:var(--black);color:var(--white);border:none;font-weight:600;cursor:pointer;transition:.3s;}
+.form-btn:hover{opacity:.85;}
+@media(max-width:768px){.contact-grid{grid-template-columns:1fr;text-align:center;}.contact-details{align-items:center;}}
