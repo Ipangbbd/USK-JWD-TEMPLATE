@@ -76,6 +76,3 @@ This project is licensed under the **MIT License** — see [LICENSE](./LICENSE) 
 💼 [LinkedIn](https://linkedin.com/in/yourprofile)  
 🌍 [Website](https://yourdomain.com)
 ```
-
----
-
