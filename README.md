@@ -39,7 +39,7 @@ project/
 ## ⚙️ Usage
 1. Clone this repository:
    ```bash
-   git clone https://github.com/muhammadrovi/portfolio-site.git
+   git clone https://github.com/ipangbbd/USK-JWD-TEMPLATE.git
    ```
 2. Open `index.html` directly in your browser or serve locally:
    ```bash
